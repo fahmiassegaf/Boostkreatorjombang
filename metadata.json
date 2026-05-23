@@ -1,0 +1,6 @@
+{
+  "name": "Boost Kreator",
+  "description": "Program gratis untuk kreator Jombang yang ingin mulai ngonten dengan bantuan script, collab post, mentoring, feedback, dan komunitas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
