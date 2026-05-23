@@ -10,11 +10,11 @@ export default function Hero() {
       {/* Background Marquee / Repeated Brand Text */}
       <div className="absolute inset-0 flex flex-col justify-center opacity-[0.02] overflow-hidden pointer-events-none select-none z-0 mix-blend-screen">
         <div className="flex animate-marquee whitespace-nowrap mb-[-2vw]">
-          <div className="text-[20vw] font-light tracking-tighter shrink-0 pr-[4vw] leading-none uppercase">
-            BOOST KREATOR
+          <div className="text-[20vw] font-serif tracking-tighter shrink-0 pr-[4vw] leading-none uppercase">
+            KREATOR BOOST
           </div>
-          <div className="text-[20vw] font-light tracking-tighter shrink-0 pr-[4vw] leading-none uppercase">
-            BOOST KREATOR
+          <div className="text-[20vw] font-serif tracking-tighter shrink-0 pr-[4vw] leading-none uppercase">
+            KREATOR BOOST
           </div>
         </div>
         <div className="flex animate-marquee whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
@@ -52,10 +52,10 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 120, rotateX: -20, scale: 0.9 }}
                   animate={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
                   transition={{ duration: 1.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-[72px] sm:text-[100px] md:text-[120px] lg:text-[160px] font-medium leading-[0.85] tracking-[-0.05em] uppercase text-white drop-shadow-sm"
+                  className="text-[72px] sm:text-[100px] md:text-[120px] lg:text-[160px] font-serif font-light leading-[0.85] tracking-tight text-white drop-shadow-sm"
                   style={{ transformOrigin: "bottom center" }}
                 >
-                  BOOST
+                  Kreator
                 </motion.h1>
             </div>
             <div className="overflow-hidden py-4 mt-[-10px] md:mt-[-20px]" style={{ transform: "perspective(1000px)" }}>
@@ -63,10 +63,10 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 120, rotateX: -20, scale: 0.9 }}
                   animate={{ opacity: 1, y: 0, rotateX: 0, scale: 1 }}
                   transition={{ duration: 1.4, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-[72px] sm:text-[100px] md:text-[120px] lg:text-[160px] font-medium leading-[0.85] tracking-[-0.05em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500 drop-shadow-[0_20px_40px_rgba(255,255,255,0.05)] pb-4"
+                  className="text-[72px] sm:text-[100px] md:text-[120px] lg:text-[160px] font-serif font-light leading-[0.85] tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500 drop-shadow-[0_20px_40px_rgba(255,255,255,0.05)] pb-4"
                   style={{ transformOrigin: "bottom center" }}
                 >
-                  KREATOR
+                  Boost
                 </motion.h1>
             </div>
           </div>
