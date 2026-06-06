@@ -31,7 +31,7 @@ export default function RegistrationForm() {
     const spreadsheetId = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
     if (!spreadsheetId) {
       console.warn('NEXT_PUBLIC_SPREADSHEET_ID is not configured.');
-      return;
+      throw new Error('Spreadsheet ID belum dikonfigurasi. Hubungi admin.');
     }
 
     const range = 'Sheet1!A:H'; 
@@ -113,9 +113,9 @@ Saya paham program ini gratis dan siap mengikuti prosesnya.`;
       setFormData({
         nama: '', domisili: '', usia: '', akun: '', level: '', kendala: '', kesiapan: '', pahamGratis: false
       });
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      setError('Gagal menghubungkan ke Google. Pastikan kamu mengizinkan akses.');
+      setError(err.message || 'Gagal menghubungkan ke Google. Pastikan kamu mengizinkan akses.');
     } finally {
       setIsSubmitting(false);
     }
