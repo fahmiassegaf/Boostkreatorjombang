@@ -75,19 +75,25 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-[480px]"
+            className="max-w-[500px]"
           >
-            <p className="text-[16px] md:text-[18px] text-[var(--color-text-secondary)] leading-[1.44] tracking-[-0.3px] mb-8">
-              Program gratis untuk kreator Jombang yang ingin mulai ngonten dengan script, collab post, mentoring, dan feedback langsung.
+            <p className="text-[18px] md:text-[20px] text-[var(--color-text-main)] leading-[1.4] tracking-[-0.02em] font-medium mb-3">
+              Mulai Ngonten Bareng Kreator Lokal Jombang
             </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Link href="#daftar" className="inline-flex h-[56px] items-center justify-center px-8 text-[15px] font-medium text-[#050505] bg-[var(--color-text-main)] rounded-full hover:bg-[var(--color-accent)] transition-all duration-300">
-                Daftar Batch 1
+            <p className="text-[16px] md:text-[17px] text-[var(--color-text-secondary)] leading-[1.6] tracking-[-0.01em] mb-6">
+              Kreator Boost adalah program gratis 3 bulan untuk membantu kreator pemula mulai membuat konten, membangun arah personal branding, dan tumbuh bersama Komunitas Kreator Jombang.
+            </p>
+            <div className="flex flex-wrap items-center gap-4 mb-4">
+              <Link href="#daftar" className="inline-flex h-[56px] items-center justify-center px-8 text-[15px] font-medium text-[#050505] bg-[var(--color-text-main)] rounded-full hover:bg-[var(--color-accent)] transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                Daftar Batch #1
               </Link>
               <Link href="#program" className="inline-flex h-[56px] items-center justify-center px-8 text-[15px] font-medium text-[var(--color-text-main)] bg-transparent border border-[var(--color-border)] rounded-full hover:border-[var(--color-border-hover)] transition-all duration-300">
-                Lihat Detail
+                Lihat Kurikulum
               </Link>
             </div>
+            <p className="text-[13px] text-[var(--color-text-muted)] mt-2 italic">
+              Gratis untuk peserta terpilih. Kuota terbatas.
+            </p>
           </motion.div>
 
         </div>

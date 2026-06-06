@@ -5,23 +5,43 @@ import { motion } from 'motion/react';
 const helps = [
   {
     num: "01",
-    title: "Script Konten",
-    desc: "Script disiapkan agar peserta tidak berhenti di ide."
+    title: "Content Script",
+    desc: "Peserta dibantu membuat struktur konten dari hook, isi, sampai CTA."
   },
   {
     num: "02",
-    title: "Collab Post",
-    desc: "Konten dapat diajukan untuk collab dengan akun komunitas."
+    title: "Mindset Reset",
+    desc: "Peserta dibantu melewati rasa takut mulai dan perfeksionisme."
   },
   {
     num: "03",
-    title: "Mentoring",
-    desc: "Sesi online dan offline untuk membahas proses dan kendala."
+    title: "Creator IKIGAI",
+    desc: "Peserta mencari titik temu antara minat, kemampuan, kebutuhan audiens, dan peluang platform."
   },
   {
     num: "04",
-    title: "Feedback",
-    desc: "Konten dievaluasi agar peserta tahu apa yang perlu diperbaiki."
+    title: "Storytelling",
+    desc: "Peserta belajar membuat konten yang lebih menarik dan tidak datar."
+  },
+  {
+    num: "05",
+    title: "Simple Production",
+    desc: "Peserta belajar membuat konten dengan alat sederhana."
+  },
+  {
+    num: "06",
+    title: "Algorithm & Distribution",
+    desc: "Peserta memahami dasar distribusi konten, caption, hashtag, dan SEO platform."
+  },
+  {
+    num: "07",
+    title: "Sustainability",
+    desc: "Peserta belajar tetap konsisten tanpa burnout."
+  },
+  {
+    num: "08",
+    title: "Community Collaboration",
+    desc: "Peserta mendapat ruang kolaborasi dengan komunitas kreator lokal."
   }
 ];
 
@@ -36,10 +56,10 @@ export default function WhatYouGet() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:w-1/3 pt-4"
+            className="lg:w-1/3 pt-4 sticky top-32"
           >
-            <h2 className="text-[48px] md:text-[64px] lg:text-[82px] font-light leading-[0.92] tracking-[-2px] md:tracking-[-3px] text-[var(--color-text-main)] max-w-sm">
-              Apa yang dibantu?
+            <h2 className="text-[48px] md:text-[64px] lg:text-[72px] font-medium leading-[0.92] tracking-[-0.03em] text-[var(--color-text-main)] max-w-sm">
+              Apa yang Kamu Dapatkan di Boost Kreator?
             </h2>
           </motion.div>
 

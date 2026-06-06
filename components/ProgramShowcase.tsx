@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] = [
   {
-    cat: "Tahap 01",
-    title: "Onboarding peserta",
-    desc: "Masuk ke ekosistem komunitas dan grup diskusi eksklusif.",
+    cat: "Sesi 01",
+    title: "Mindset Reset",
+    desc: "Kenapa Kamu Belum Mulai? Membantu peserta memahami hambatan utama sebelum mulai ngonten, seperti takut salah, perfeksionisme, merasa belum siap, dan rasa tidak percaya diri.",
     visual: (
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div 
@@ -18,7 +18,7 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
         >
           <Image 
             src="/icon-1.png" 
-            alt="Icon 1"
+            alt="Icon Mindset"
             fill
             className="object-contain"
           />
@@ -27,9 +27,9 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
     )
   },
   {
-    cat: "Tahap 02",
-    title: "Terima script konten",
-    desc: "Akses library script yang sudah disiapkan untuk dieksekusi.",
+    cat: "Sesi 02",
+    title: "Niche, Persona & Creator IKIGAI",
+    desc: "Membantu peserta menemukan arah konten melalui minat, kemampuan, kebutuhan audiens, dan peluang platform.",
     visual: (
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div 
@@ -39,7 +39,7 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
         >
           <Image 
             src="/icon-2.png" 
-            alt="Icon 2"
+            alt="Icon Persona"
             fill
             className="object-contain"
           />
@@ -48,9 +48,9 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
     )
   },
   {
-    cat: "Tahap 03",
-    title: "Rekam dengan gaya sendiri",
-    desc: "Take video konten menggunakan style personal masing-masing.",
+    cat: "Sesi 03",
+    title: "Script & Storytelling",
+    desc: "Membantu peserta menulis hook, menyusun alur konten, membuat cerita yang menarik, dan menyampaikan pesan dengan lebih jelas.",
     visual: (
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div 
@@ -60,7 +60,7 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
         >
           <Image 
             src="/icon-3.png" 
-            alt="Icon 3"
+            alt="Icon Scripting"
             fill
             className="object-contain"
           />
@@ -69,9 +69,9 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
     )
   },
   {
-    cat: "Tahap 04",
-    title: "Posting di akun pribadi",
-    desc: "Publish hasil karya pertama atau langkah terbarumu.",
+    cat: "Sesi 04",
+    title: "Produksi Konten",
+    desc: "Membantu peserta membuat konten sederhana dengan pencahayaan, framing, audio, dan editing dasar yang mudah diulang dengan alat seadanya.",
     visual: (
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div 
@@ -81,7 +81,7 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
         >
           <Image 
             src="/icon-4.png" 
-            alt="Icon 4"
+            alt="Icon Produksi"
             fill
             className="object-contain"
           />
@@ -90,9 +90,9 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
     )
   },
   {
-    cat: "Tahap 05",
-    title: "Ajukan collab post",
-    desc: "Perluas jangkauan bersama akun resmi komunitas.",
+    cat: "Sesi 05",
+    title: "Algorithm & Distribution",
+    desc: "Membantu peserta memahami dasar algoritma, caption, hashtag, keyword, TikTok SEO, Instagram, dan jadwal posting yang realistis.",
     visual: (
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div 
@@ -102,7 +102,7 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
         >
           <Image 
             src="/icon-5.png" 
-            alt="Icon 5"
+            alt="Icon Distribusi"
             fill
             className="object-contain"
           />
@@ -111,9 +111,9 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
     )
   },
   {
-    cat: "Tahap 06",
-    title: "Dapat feedback konten",
-    desc: "Evaluasi, perbaiki, dan teruskan progres dengan konsisten.",
+    cat: "Sesi 06",
+    title: "Sustainability",
+    desc: "Tetap Jalan Tanpa Burnout. Membantu peserta membuat sistem konsistensi, content batching, hubungan sehat dengan analytics, dan roadmap kreator 90 hari.",
     visual: (
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div 
@@ -123,7 +123,7 @@ const steps: { cat: string; title: string; desc: string; visual: ReactNode }[] =
         >
           <Image 
             src="/icon-6.png" 
-            alt="Icon 6"
+            alt="Icon Konsistensi"
             fill
             className="object-contain"
           />
@@ -144,8 +144,8 @@ export default function ProgramShowcase() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-[48px] md:text-[80px] lg:text-[100px] font-medium leading-[0.9] tracking-[-0.04em] text-white mb-20"
         >
-          Yang akan <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400">kamu jalani.</span>
+          Kurikulum 3 Bulan: <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400">6 Sesi Pembekalan.</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
